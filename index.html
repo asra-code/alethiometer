@@ -2,39 +2,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-  <script
-    type="text/javascript"
-    src="//code.jquery.com/jquery-1.6.2.js"
-    
-  ></script>
-
-      <script type="text/javascript" src="https://raw.githubusercontent.com/asra-code/alethiometer/main/jquery.imagemapster.js"></script>
-
-
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.6.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.15/datatables.min.css">
+  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.15/datatables.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://gyrocode.github.io/jquery-datatables-alphabetSearch/1.2.2/css/dataTables.alphabetSearch.css">
+  <script type="text/javascript" src="https://gyrocode.github.io/jquery-datatables-alphabetSearch/1.2.2/js/dataTables.alphabetSearch.min.js"></script>
 </head>
-<body>
-    <img src="https://raw.githubusercontent.com/asra-code/symbolmeter/main/symbolmeterimg.png" 
-usemap="#meter" style="width:600px;">
-<map id="meter_image_map" name="meter">
-
-    <area href="#" state="alpha" full="Alpha and Omega" shape="poly" coords="1546,111,1619,136,1580,296,1488,264">
-
-    </map>
-
-
-    <script type="text/javascript">//<![CDATA[
-      
-      $(document).ready(function() {
-$('img').mapster(initial_opts)
-.mapster('set',true,'CA', {
-    fill: true,
-    fillColor: '00ff00'
-})
-.mapster('snapshot')
-.mapster('rebind',basic_opts);
-});
-
+ <body> 
+   <script type="text/javascript">//<![CDATA[
 
 var img = $('img'), 
     darkImg, 
@@ -49,7 +24,7 @@ var img = $('img'),
             opacity: 0.0
         });
 
-$(document).ready(function() {
+
 img.mapster({
         mapKey: 'state',
         render_highlight: {
@@ -75,11 +50,17 @@ img.mapster({
         $('img.mapster_el')[0].src=originalImg;
         darkFilter.remove();
     }
-})   
+    
 });
-
-
   //]]></script>
+  
+  <img src="https://raw.githubusercontent.com/asra-code/symbolmeter/main/symbolmeterimg.png" 
+usemap="#meter" style="width:600px;">
+<map id="meter_image_map" name="meter">
 
-</body>
+    <area href="#" state="alpha" full="Alpha and Omega" shape="poly" coords="1546,111,1619,136,1580,296,1488,264">
+
+    </map>
+  </body>  
 </html>
+
