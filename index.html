@@ -24,6 +24,16 @@ usemap="#meter" style="width:600px;">
 
 
     <script type="text/javascript">//<![CDATA[
+      
+      $(document).ready(function() {
+$('img').mapster(initial_opts)
+.mapster('set',true,'CA', {
+    fill: true,
+    fillColor: '00ff00'
+})
+.mapster('snapshot')
+.mapster('rebind',basic_opts);
+});
 
 
 var img = $('img'), 
@@ -39,7 +49,7 @@ var img = $('img'),
             opacity: 0.0
         });
 
-
+$(document).ready(function() {
 img.mapster({
         mapKey: 'state',
         render_highlight: {
@@ -65,7 +75,7 @@ img.mapster({
         $('img.mapster_el')[0].src=originalImg;
         darkFilter.remove();
     }
-    
+})   
 });
 
 
