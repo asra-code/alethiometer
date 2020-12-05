@@ -12,21 +12,17 @@
 </head>
 <body>
   
-  <div id="mapblock">
-    <img id="map_image" src="https://raw.githubusercontent.com/asra-code/symbolmeter/main/symbolmeterimg.png" usemap="#meter" style="width:600px;"/>
-    <map name="meter">
-        <area href="#" state="alpha" full="Alpha and Omega" shape="poly" coords="1546,111,1619,136,1580,296,1488,264">
+<img src="https://raw.githubusercontent.com/asra-code/symbolmeter/main/symbolmeterimg.png" 
+usemap="#meter" style="width:600px;">
+<map id="meter_image_map" name="meter">
+
+    <area href="#" state="alpha" full="Alpha and Omega" shape="poly" coords="1546,111,1619,136,1580,296,1488,264">
+
     </map>
-</div>
 <script type="text/javascript" src="./jquery.imagemapster.js"></script>
 
-    <script type="text/javascript">//<![CDATA[
-
-//$('img').mapster(initial_opts)
-//.mapster('snapshot')
-//.mapster('rebind',basic_opts);     
-     
-var img = $('img'), 
+    <script type="text/javascript">
+  var img = $('img'), 
     darkImg, 
     originalImg = img[0].src,
     darkFilter = $('<div />').width(img.width()).height(img.height())
@@ -67,11 +63,7 @@ img.mapster({
     }
     
 });
-
-
-
-
-  //]]></script>
+ </script>
 
 
 </body>
