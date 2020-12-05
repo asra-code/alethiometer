@@ -28,7 +28,10 @@ usemap="#meter" style="width:600px;">
 
     <script type="text/javascript">//<![CDATA[
 
-
+$('img').mapster(initial_opts)
+.mapster('snapshot')
+.mapster('rebind',basic_opts);     
+     
 var img = $('img'), 
     darkImg, 
     originalImg = img[0].src,
