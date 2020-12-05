@@ -9,12 +9,29 @@
     src="//code.jquery.com/jquery-1.6.2.js"
     
   ></script>
+   <style>
+      p {text-align: center;}
+div {text-align: center;}
+      img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  width: 65%;
+  height: auto;
+ width: auto\9; /* ie8 */
+}
+      .nonDraggableImage{
+    -webkit-user-drag: none;
+}
+</style>
 </head>
 <body>
 
 <center>
 <img src="https://raw.githubusercontent.com/asra-code/symbolmeter/main/symbolmeterimg.png" 
-usemap="#meter" style="width: 50%;">
+usemap="#meter" style="width: 50%;" class="nonDraggableImage">
 <map id="meter_image_map" name="meter">
 
     <area href="#" state="alpha" full="Alpha and Omega" shape="poly" coords="1546,111,1619,136,1580,296,1488,264">
